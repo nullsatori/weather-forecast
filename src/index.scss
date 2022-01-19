@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Mono&display=swap');
 $primary: #8875cb;
 $secondary: #19245b;
 $main-color: #f44336;
@@ -16,7 +16,7 @@ $main-color: #18191a;
 }
 header {
   display: flex;
-  margin: 2% auto 5% auto;
+  margin: 2% auto 3% auto;
   width: 20%;
   justify-content: center;
 }
@@ -33,4 +33,10 @@ section{
   border: 2px solid white;
   border-radius: 4px;
   padding: 5%;
+}
+#cityName{
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
 }
