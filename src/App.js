@@ -1,7 +1,7 @@
 import 'reseter.css'
 import React, {useEffect, useState} from 'react'
 import images from './index'
-const apl = images.a01d;
+const apl = images;
 function App() {
     const BASE_URL = 'https://api.weatherbit.io/v2.0/forecast/daily';
     const API_KEY = 'e4f2f55263ab4f9d82865b3d1dc24827';
@@ -57,24 +57,24 @@ function App() {
           <p id='cityName'>{city}</p>
           <div className="wrap">
               <div className="card">
-                  <img alt=""/>
+                  <img src={`./icons/${images}`}/>
                   <p>{temps[0]}</p>
               </div>
               <div className="card">
+                  <img src={`./icons/${images}`}/>
                   <p>{temps[1]}</p>
-                  <p>PLACEHOLDER</p>
               </div>
               <div className="card">
+                  <img src={`./icons/${images}`}/>
                   <p>{temps[2]}</p>
-                  <p>PLACEHOLDER</p>
               </div>
               <div className="card">
+                  <img src={`./icons/${images}`}/>
                   <p>{temps[3]}</p>
-                  <p>PLACEHOLDER</p>
               </div>
               <div className="card">
+                  <img src={`./icons/${images}`}/>
                   <p>{temps[4]}</p>
-                  <p>PLACEHOLDER</p>
               </div>
           </div>
 

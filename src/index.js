@@ -34,7 +34,7 @@ import t03d from './icons/t03d.png';
 import t04d from './icons/t04d.png';
 import t05d from './icons/t05d.png';
 import u00d from './icons/u00d.png';
-const images = {
+const images = [
     a01d,
     a02d,
     a03d,
@@ -66,7 +66,7 @@ const images = {
     t04d,
     t05d,
     u00d,
-}
+]
 ReactDOM.render(
   <React.StrictMode>
     <App />
