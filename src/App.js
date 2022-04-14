@@ -1,7 +1,5 @@
 import 'reseter.css'
 import React, {useEffect, useState} from 'react'
-import images from './index'
-const apl = images;
 function App() {
     const BASE_URL = 'https://api.weatherbit.io/v2.0/forecast/daily';
     const API_KEY = 'e4f2f55263ab4f9d82865b3d1dc24827';
@@ -19,7 +17,6 @@ function App() {
                     setLatitude(position.coords.latitude);
                     setLongitude(position.coords.longitude);
                     setStatus(100);
-                    ;
                 });
             } else {
                 console.log("Not Available");
@@ -57,23 +54,23 @@ function App() {
           <p id='cityName'>{city}</p>
           <div className="wrap">
               <div className="card">
-                  <img src={`./icons/${images}`}/>
+                  <img src={`./icons/${icons[0]}.png`} alt='icon'/>
                   <p>{temps[0]}</p>
               </div>
               <div className="card">
-                  <img src={`./icons/${images}`}/>
+                  <img src={`./icons/${icons[1]}.png`} alt='icon'/>
                   <p>{temps[1]}</p>
               </div>
               <div className="card">
-                  <img src={`./icons/${images}`}/>
+                  <img src={`./icons/${icons[2]}.png`} alt='icon'/>
                   <p>{temps[2]}</p>
               </div>
               <div className="card">
-                  <img src={`./icons/${images}`}/>
+                  <img src={`./icons/${icons[3]}.png`} alt='icon'/>
                   <p>{temps[3]}</p>
               </div>
               <div className="card">
-                  <img src={`./icons/${images}`}/>
+                  <img src={`./icons/${icons[4]}.png`} alt='icon'/>
                   <p>{temps[4]}</p>
               </div>
           </div>
