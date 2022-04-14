@@ -1,4 +1,4 @@
-import 'reseter.css'
+import 'normalize.css'
 import React, {useEffect, useState} from 'react'
 function App() {
     const BASE_URL = 'https://api.weatherbit.io/v2.0/forecast/daily';
